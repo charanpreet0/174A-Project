@@ -8,7 +8,7 @@ import Controller.*;
 public class Main {
     public static void createNewDatabase(String fileName) {
 
-        String url = "jdbc:sqlite:Users/karanveer/Desktop/School/Spring_21/CS174A/174A-Project/sqlite/db" + fileName;
+        String url = "jdbc:sqlite:sqlite/db/" + fileName;
 
         try (Connection conn = DriverManager.getConnection(url)) {
             if (conn != null) {
@@ -18,7 +18,7 @@ public class Main {
             }
 
         } catch (SQLException e) {
-            System.out.println( "Exception block error.");
+            System.out.println("Exception block error.");
             System.out.println(e.getMessage());
         }
     }

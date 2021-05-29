@@ -198,9 +198,9 @@ public class CreateAndInitTable{
         return new String[] {sql1, sql2, sql3, sql4, sql5, sql6, sql7, sql8, sql9, sql10, sql11, sql12, sql13, sql14, sql15, sql16, sql17, sql18, sql19, sql20, sql21};
 
     }
-    private Connection connect() {
+    public static Connection connect() {
         // SQLite connection string
-        String url = "jdbc:sqlite:/Users/karanveer/Desktop/School/Spring_21/CS174A/174A-Project/sqlite/db";
+        String url = "jdbc:sqlite:sqlite/db/Project1.db";
         // Change ':/Users/karanveer/Desktop/School/Spring_21/CS174A/' to whatever it is for you'
         // To find it go to the db and then pwd
         Connection conn = null;
