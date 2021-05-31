@@ -219,7 +219,7 @@ public class CreateAndInitTable{
         String[] arr = createArray(); // Make an Array of Strings with all of the create Table commands 
 
         
-        try (Connection conn = this.connect();
+        try (Connection conn = connect();
             Statement stmt = conn.createStatement()) {
             // create a new table
             for(int i = 0; i < arr.length; i++) {

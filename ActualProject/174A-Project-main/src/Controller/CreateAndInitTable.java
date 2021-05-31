@@ -84,7 +84,7 @@ public class CreateAndInitTable{
                 + " CHECK (initial_deposit >= 1000),\n"
                 + ");";
 
-        String sql8 = "CREATE TABLE has_these_trans(\n"
+        String sql8 = "CREATE TABLE has_these_transactions(\n"
                 + " transaction_id INTEGER,\n"
                 + " ID_number CHAR(9),\n"
                 + " PRIMARY KEY (ID_number,transaction_id),\n"

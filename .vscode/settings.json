@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "src",
         "sqlite/java/connect",
+        "sqlite/java",
         "java",
-        "sqlite/java"
+        "ActualProject/174A-Project-main/src/Accounts"
     ]
 }
